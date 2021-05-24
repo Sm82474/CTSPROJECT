@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BugCollection version='3.0.1' threshold='medium' effort='min'><Error></Error><Project><SrcDir>E:\corejava\ide\JUNITLEARN\src\main\java</SrcDir><SrcDir>E:\corejava\ide\JUNITLEARN\target\generated-sources\annotations</SrcDir><SrcDir>E:\corejava\ide\JUNITLEARN\src\test\java</SrcDir></Project></BugCollection>

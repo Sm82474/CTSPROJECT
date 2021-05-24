@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2021-05-04T15:40:22.197">
+<file name="E:\corejava\ide\JUNITLEARN\src\main\java\com\cts\junitlearn\EvenorOdd.java">
+<violation beginline="6" endline="6" begincolumn="25" endcolumn="34" rule="UselessParentheses" ruleset="Code Style" package="com.cts.junitlearn" class="EvenorOdd" method="evenCheck" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="10" endline="10" begincolumn="25" endcolumn="34" rule="UselessParentheses" ruleset="Code Style" package="com.cts.junitlearn" class="EvenorOdd" method="oddCheck" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>
