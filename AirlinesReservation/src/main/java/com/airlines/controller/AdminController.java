@@ -17,6 +17,7 @@ import com.airlines.exception.AirlinesException;
 import com.airlines.exception.NoAccessException;
 import com.airlines.exception.UserNotFoundException;
 import com.airlines.model.AdminLogin;
+import com.airlines.model.AdminResponse;
 import com.airlines.model.AuthResponse;
 import com.airlines.model.UserLoginModel;
 import com.airlines.model.UserModel;
@@ -48,10 +49,7 @@ public class AdminController {
 	
 	
 	/*
-	 * @PostMapping("/register")
-	public ResponseEntity<SellerResponse> registration(@RequestBody Seller seller) throws ExistingUserException{
-		return new ResponseEntity<SellerResponse>(sellerService.register(seller), HttpStatus.CREATED);
-	}
+	 * 
 	@PostMapping("/register")
 	public ResponseEntity register(@RequestBody UserModel userModel) throws UserNotFoundException {
 		User user1= userService.registerUser(userModel);
@@ -68,11 +66,12 @@ public class AdminController {
 	
 	
 	@PostMapping("/adminLogin") 
-	public ResponseEntity<AdminLogin> login(@RequestBody AdminLogin admin) {
+	public ResponseEntity<AdminResponse> login(@RequestBody AdminLogin admin) {
 		
 		try {
-			adminService.validate(admin);
-			return new ResponseEntity<AdminLogin>(HttpStatus.ACCEPTED);
+			
+			AdminResponse adminResponse= adminService.validate(admin);
+			return new ResponseEntity<AdminResponse>(adminResponse,HttpStatus.ACCEPTED);
 		} catch (NoAccessException e) {
 			return new ResponseEntity(e.getMessage(),HttpStatus.BAD_REQUEST);
 		}
